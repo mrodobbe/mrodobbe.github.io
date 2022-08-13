@@ -3,6 +3,7 @@ title = "Maarten Dobbelaere"
 theme = "pulp"
 canonifyurls = true
 hasCJKLanguage = true
+publishDir = "docs"
 # pygmentsCodefences = true
 # pygmentsUseClasses = true
 # googleAnalytics = "{your tracking code}"
