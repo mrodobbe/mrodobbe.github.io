@@ -1,0 +1,59 @@
+baseurl = "https://mrodobbe.github.io/"
+title = "Maarten Dobbelaere"
+theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+# pygmentsCodefences = true
+# pygmentsUseClasses = true
+# googleAnalytics = "{your tracking code}"
+
+[markup.goldmark.renderer]
+    unsafe = true # Allow user HTML tags
+
+[params]
+    author = "Maarten Dobbelaere"
+    avatar = "pic.jpg"
+    # avatarDescription = "My avatar description"
+    favicon = "atom.ico"
+    description = """
+        I am a PhD-student in the group of Kevin Van Geem at Ghent University's Laboratory for Chemical Technology.
+        My research is focused on using machine learning to guide chemical reactions in flow to optimal conditions. 
+    """
+    publicationYear = "2022"
+    # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
+    # singlePageDateFormat = "January 2, 2006"
+    # custom_css = ["/css/custom.css"]
+    # custom_js = ["/js/custom.js"]
+
+# Make sure setting a following option for search bar to work
+[outputs]
+    section = ["JSON", "HTML"]
+    term = ["JSON", "HTML"]
+
+[[menu.main]]
+    identifier = "blog"
+    name = "Scholar" #If display text link, cancel comment out
+    pre = "<i class='fas fa-graduation-cap'></i>" 
+    url = "https://scholar.google.com/citations?user=cw3DUf0AAAAJ"
+    weight = 20
+
+[[menu.main]]
+    identifier = "twitter"
+    name = "Twitter"
+    pre = "<i class='fab fa-twitter fa-lg'></i>"
+    url = "https://twitter.com/M_Dobbelaere"
+    weight = 20
+
+[[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    pre = "<i class='fab fa-github fa-lg'></i>"
+    url = "https://github.com/mrodobbe"
+    weight = 30
+
+[[menu.main]]
+    identifier = "email"
+    name = "Email"
+    pre = "<i class='fa fa-envelope fa-lg'></i>"
+    url = "mailto:mrodobbe.Dobbelaere@UGent.be"
+    weight = 40
