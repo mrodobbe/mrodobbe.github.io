@@ -17,7 +17,7 @@ publishDir = "docs"
     # avatarDescription = "My avatar description"
     favicon = "atom.ico"
     description = """
-        I am a PhD-student in the group of Kevin Van Geem at Ghent University's Laboratory for Chemical Technology.
+        I am a PhD-student in the group of prof. Kevin Van Geem at Ghent University's Laboratory for Chemical Technology.
         My research is focused on using machine learning to guide chemical reactions in flow to optimal conditions. 
     """
     publicationYear = "2022"
@@ -57,4 +57,11 @@ publishDir = "docs"
     name = "Email"
     pre = "<i class='fa fa-envelope fa-lg'></i>"
     url = "mailto:mrodobbe.Dobbelaere@UGent.be"
+    weight = 40
+
+[[menu.main]]
+    identifier = "thesis"
+    name = "Thesis Topics"
+    pre = "<i class='fas fa-book'></i>"
+    url = "/posts/thesis/"
     weight = 40
