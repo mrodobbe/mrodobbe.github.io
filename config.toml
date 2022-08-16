@@ -6,7 +6,7 @@ hasCJKLanguage = true
 publishDir = "docs"
 # pygmentsCodefences = true
 # pygmentsUseClasses = true
-# googleAnalytics = "{your tracking code}"
+googleAnalytics = "G-9YTXZQFXW7"
 
 [markup.goldmark.renderer]
     unsafe = true # Allow user HTML tags
