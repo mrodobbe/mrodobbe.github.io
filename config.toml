@@ -1,12 +1,13 @@
 baseurl = "https://mrodobbe.github.io/"
 title = "Maarten Dobbelaere"
 theme = "pulp"
+GoogleAnalyticsID = "G-9YTXZQFXW7"
 canonifyurls = true
 hasCJKLanguage = true
 publishDir = "docs"
 # pygmentsCodefences = true
 # pygmentsUseClasses = true
-googleAnalytics = "G-9YTXZQFXW7"
+# googleAnalytics = "G-9YTXZQFXW7"
 
 [markup.goldmark.renderer]
     unsafe = true # Allow user HTML tags
