@@ -18,8 +18,9 @@ publishDir = "docs"
     # avatarDescription = "My avatar description"
     favicon = "atom.ico"
     description = """
-        I am a PhD-student in the group of prof. Kevin Van Geem at Ghent University's Laboratory for Chemical Technology.
-        My research is focused on using machine learning to guide chemical reactions in flow to optimal conditions. 
+        I am a postdoctoral researcher at Ghent University's Laboratory for Chemical Technology, working on AI for chemistry. 
+        In May 2025, I obtained my Ph.D. thesis titled "Molecular Machine Learning for Chemical Reaction Engineering", 
+        supervised by Kevin Van Geem and Christian Stevens. 
     """
     publicationYear = "2022"
     # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
@@ -47,6 +48,13 @@ publishDir = "docs"
     weight = 20
 
 [[menu.main]]
+    identifier = "bluesky"
+    name = "BlueSky"
+    pre = "<i class='fa-brands fa-bluesky'></i>"  
+    url = "https://bsky.app/profile/maartendobbelaere.bsky.social"
+    weight = 25
+
+[[menu.main]]
     identifier = "github"
     name = "GitHub"
     pre = "<i class='fab fa-github fa-lg'></i>"
@@ -66,3 +74,10 @@ publishDir = "docs"
     pre = "<i class='fas fa-book'></i>"
     url = "/posts/thesis/"
     weight = 40
+
+[[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    pre = "<i class='fas fa-file-pdf'></i>"
+    url = "/cv.pdf" 
+    weight = 50
