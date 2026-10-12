@@ -14,13 +14,12 @@ publishDir = "docs"
 
 [params]
     author = "Maarten Dobbelaere"
-    avatar = "pic.jpg"
-    # avatarDescription = "My avatar description"
+    avatar = "portrait-2026.jpg"
+    avatarDescription = "Portrait of Maarten Dobbelaere"
     favicon = "atom.ico"
     description = """
-        I am a postdoctoral researcher at Ghent University's Laboratory for Chemical Technology, working on AI for chemistry. 
-        In May 2025, I obtained my Ph.D. thesis titled "Molecular Machine Learning for Chemical Reaction Engineering", 
-        supervised by Kevin Van Geem and Christian Stevens. 
+        Scientist at the Laboratory for Artificial Chemical Intelligence (LIAC), EPFL, working on AI for
+        chemical synthesis planning and chemicals that are safe and sustainable by design.
     """
     publicationYear = "2022"
     # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
@@ -62,18 +61,14 @@ publishDir = "docs"
     weight = 30
 
 [[menu.main]]
-    identifier = "email"
-    name = "Email"
-    pre = "<i class='fa fa-envelope fa-lg'></i>"
-    url = "mailto:mrodobbe.Dobbelaere@UGent.be"
-    weight = 40
+    identifier = "orcid"
+    name = "ORCID"
+    pre = "<i class='fab fa-orcid fa-lg'></i>"
+    url = "https://orcid.org/0000-0002-8977-8569"
+    weight = 35
 
-[[menu.main]]
-    identifier = "thesis"
-    name = "Thesis Topics"
-    pre = "<i class='fas fa-book'></i>"
-    url = "/posts/thesis/"
-    weight = 40
+# Email is not listed here: the homepage builds the address in the browser
+# (layouts/index.html) so it never appears in plain text.
 
 [[menu.main]]
     identifier = "cv"
