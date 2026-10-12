@@ -1,0 +1,2 @@
+# Built site: commit the exact bytes Hugo wrote, so stylesheet integrity hashes stay valid.
+docs/** -text
