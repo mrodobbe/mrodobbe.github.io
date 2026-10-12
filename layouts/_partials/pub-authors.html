@@ -1,0 +1,3 @@
+{{- /* Author list with "Maarten R. Dobbelaere" in bold. */ -}}
+{{- $me := "Maarten R. Dobbelaere" -}}
+{{- replace (. | htmlEscape) $me (printf "<strong>%s</strong>" $me) | safeHTML -}}

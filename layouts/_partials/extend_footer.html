@@ -1,0 +1,8 @@
+<script>
+    // Build the mailto link only when someone reaches for it, so the address never appears in the HTML.
+    document.querySelectorAll('.js-mail').forEach(function (a) {
+        function reverse(s) { return s.split('').reverse().join(''); }
+        function arm() { a.href = 'mailto:' + reverse(a.dataset.u) + '@' + reverse(a.dataset.d); }
+        ['mouseover', 'focus', 'touchstart', 'click'].forEach(function (e) { a.addEventListener(e, arm, { passive: true }); });
+    });
+</script>

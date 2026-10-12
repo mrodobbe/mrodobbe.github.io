@@ -1,0 +1,24 @@
+# Shown under "In the press" on the home page, newest first (sorted by date).
+
+- outlet: "C&EN"
+  date: 2026-10-01
+  title: "Despite safer options, chemists choose hazardous solvents"
+  url: "https://cen.acs.org/synthesis/green-chemistry/hazardous-solvent-use-patent-data/104/web/2026/09"
+
+- outlet: "Spektrum"
+  date: 2026-10-01
+  title: "Keine grüne Chemie: Warum Chemie oft immer noch giftig ist"
+  url: "https://www.spektrum.de/news/keine-gruene-chemie-warum-chemie-oft-immer-noch-giftig-ist/2347623"
+  lang: "de"
+
+- outlet: "Nature"
+  date: 2026-09-25
+  title: "Chemists struggle to ditch hazardous solvents — even after decades of ‘green’ efforts"
+  url: "https://www.nature.com/articles/d41586-026-03023-0"
+
+- outlet: "Spektrum"
+  date: 2025-09-28
+  prefix: "Interview"
+  title: "»KI hat meine Erwartungen sogar übertroffen«"
+  url: "https://www.spektrum.de/news/ki-hat-meine-erwartungen-sogar-uebertroffen/2286850"
+  lang: "de"

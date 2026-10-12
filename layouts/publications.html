@@ -1,0 +1,43 @@
+{{- define "main" }}
+{{- $pubs := hugo.Data.publications }}
+{{- $first := where $pubs "group" "first" }}
+{{- $coauthor := where $pubs "group" "coauthor" }}
+{{- $preprints := where $pubs "group" "preprint" }}
+<article class="nb">
+    <header class="nb-pagehead">
+        <h1 class="nb-name">{{ .Title }}</h1>
+        <p class="nb-role">
+            {{ add (len $first) (len $coauthor) }} peer-reviewed papers · {{ len $preprints }} preprints ·
+            <a href="{{ "publications.pdf" | absURL }}" rel="nofollow">PDF</a> ·
+            <a href="https://scholar.google.com/citations?user=cw3DUf0AAAAJ">Google Scholar</a>
+        </p>
+    </header>
+
+    <section class="nb-section">
+        <h2 class="nb-label">First author</h2>
+        <ol class="pub-list">
+            {{- range $i, $p := $first }}
+            {{ partial "pub-entry.html" (dict "num" (add $i 1) "pub" $p) }}
+            {{- end }}
+        </ol>
+    </section>
+
+    <section class="nb-section">
+        <h2 class="nb-label">Co-author</h2>
+        <ol class="pub-list">
+            {{- range $i, $p := $coauthor }}
+            {{ partial "pub-entry.html" (dict "num" (add $i (len $first) 1) "pub" $p) }}
+            {{- end }}
+        </ol>
+    </section>
+
+    <section class="nb-section">
+        <h2 class="nb-label">Preprints</h2>
+        <ol class="pub-list">
+            {{- range $i, $p := $preprints }}
+            {{ partial "pub-entry.html" (dict "num" (printf "P%d" (add $i 1)) "pub" $p) }}
+            {{- end }}
+        </ol>
+    </section>
+</article>
+{{- end }}

@@ -1,0 +1,295 @@
+/* Notebook look on top of PaperMod. Fonts are self-hosted (static/fonts, SIL OFL). */
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/ibm-plex-sans-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "IBM Plex Sans"; font-style: italic; font-weight: 400; font-display: swap; src: url("/fonts/ibm-plex-sans-latin-400-italic.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "IBM Plex Sans"; font-style: italic; font-weight: 400; font-display: swap; src: url("/fonts/ibm-plex-sans-latin-ext-400-italic.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/ibm-plex-sans-latin-ext-600-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "IBM Plex Serif"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/ibm-plex-serif-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "IBM Plex Serif"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/ibm-plex-serif-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "IBM Plex Serif"; font-style: italic; font-weight: 400; font-display: swap; src: url("/fonts/ibm-plex-serif-latin-400-italic.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "IBM Plex Serif"; font-style: italic; font-weight: 400; font-display: swap; src: url("/fonts/ibm-plex-serif-latin-ext-400-italic.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "IBM Plex Serif"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/ibm-plex-serif-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "IBM Plex Serif"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/ibm-plex-serif-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/ibm-plex-mono-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/ibm-plex-mono-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+:root {
+    --nb-accent: #0b6e69;
+    --nb-sans: "IBM Plex Sans", system-ui, sans-serif;
+    --nb-serif: "IBM Plex Serif", Georgia, serif;
+    --nb-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+:root[data-theme="dark"] {
+    --nb-accent: #5cc8b0;
+}
+
+body {
+    font-family: var(--nb-sans);
+}
+
+/* PaperMod gives list pages (the home page included) a grey ground; keep it plain. */
+.list,
+[data-theme="dark"] .list {
+    background: var(--theme);
+}
+
+.logo a {
+    font-family: var(--nb-mono);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nb {
+    color: var(--content);
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.nb a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.nb a:hover {
+    color: var(--nb-accent);
+}
+
+.nb ul,
+.nb ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nb p {
+    margin: 0;
+}
+
+/* Intro */
+.nb-intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 24px;
+    margin-top: 24px;
+}
+
+.nb-portrait {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nb-name {
+    margin: 0;
+    color: var(--primary);
+    font-family: var(--nb-serif);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.nb .nb-role {
+    margin-top: 2px;
+    color: var(--secondary);
+    font-family: var(--nb-mono);
+    font-size: 13px;
+    letter-spacing: 0.02em;
+}
+
+.nb-bio {
+    margin-top: 32px;
+}
+
+.nb-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    margin-top: 24px;
+    font-family: var(--nb-mono);
+    font-size: 14px;
+}
+
+/* Sections */
+.nb-section {
+    margin-top: 72px;
+}
+
+.nb-label {
+    margin: 0 0 12px;
+    color: var(--secondary);
+    font-family: var(--nb-mono);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* In the press */
+.nb-press {
+    border-top: 1px solid var(--tertiary);
+}
+
+.nb .nb-press a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--tertiary);
+    text-decoration: none;
+}
+
+.nb-outlet {
+    flex: 0 0 140px;
+    font-family: var(--nb-serif);
+    font-size: 19px;
+    font-style: italic;
+}
+
+.nb-headline {
+    flex: 1 1 300px;
+}
+
+.nb-date {
+    color: var(--secondary);
+    font-family: var(--nb-mono);
+    font-size: 13px;
+}
+
+/* Recent */
+.nb-recent {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nb-recent li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 20px;
+}
+
+.nb-recent time {
+    flex: 0 0 72px;
+    padding-top: 2px;
+    color: var(--secondary);
+    font-family: var(--nb-mono);
+    font-size: 14px;
+}
+
+.nb-text {
+    flex: 1 1 420px;
+}
+
+/* Selected publications */
+.nb-pubs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nb .nb-pub-title {
+    font-family: var(--nb-serif);
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.nb-pub-meta {
+    color: var(--secondary);
+    font-size: 15px;
+}
+
+.nb-pub-meta strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.nb .nb-more {
+    margin-top: 24px;
+    font-family: var(--nb-mono);
+    font-size: 14px;
+}
+
+.nb .nb-more a {
+    color: var(--nb-accent);
+}
+
+/* Software */
+.nb-software {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Publications page */
+.nb-pagehead {
+    margin-top: 24px;
+}
+
+.nb-pagehead .nb-role {
+    margin-top: 8px;
+}
+
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.pub {
+    display: grid;
+    grid-template-columns: 2.4em minmax(0, 1fr);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.pub-num {
+    color: var(--secondary);
+    font-family: var(--nb-mono);
+    font-size: 13px;
+    padding-top: 3px;
+}
+
+.pub-text strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.pub-note {
+    display: block;
+    margin-top: 2px;
+    color: var(--secondary);
+    font-size: 14px;
+}
+
+.pub-note p {
+    display: inline;
+}
+
+@media (max-width: 600px) {
+    .nb-name {
+        font-size: 28px;
+    }
+
+    .nb-section {
+        margin-top: 56px;
+    }
+
+    .nb-recent li {
+        flex-direction: column;
+    }
+
+    .nb-recent time,
+    .nb-text {
+        flex: none;
+    }
+}

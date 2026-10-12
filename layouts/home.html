@@ -1,0 +1,78 @@
+{{- define "main" }}
+{{- $pubs := hugo.Data.publications }}
+{{- $preprints := where $pubs "group" "preprint" }}
+<article class="nb">
+    <header class="nb-intro">
+        <img class="nb-portrait" src="{{ "img/portrait-2026.jpg" | absURL }}" alt="Portrait of Maarten Dobbelaere" width="96" height="96">
+        <div>
+            <h1 class="nb-name">Maarten Dobbelaere</h1>
+            <p class="nb-role">Scientist · LIAC, EPFL · Lausanne</p>
+        </div>
+    </header>
+
+    <div class="nb-bio">{{ .Content }}</div>
+
+    <nav class="nb-links" aria-label="Profiles">
+        <a href="https://scholar.google.com/citations?user=cw3DUf0AAAAJ">Scholar</a>
+        <a href="https://orcid.org/0000-0002-8977-8569">ORCID</a>
+        <a href="https://github.com/mrodobbe">GitHub</a>
+        <a href="https://bsky.app/profile/maartendobbelaere.bsky.social">Bluesky</a>
+        <a href="https://twitter.com/M_Dobbelaere">X</a>
+        {{- /* The address is assembled in the browser (extend_footer.html), so it never appears in the HTML. */}}
+        <a href="mailto:" class="js-mail" data-u="erealebboD.ebbodorm" data-d="eb.tneGU">Email</a>
+        <a href="{{ "cv.pdf" | absURL }}" rel="nofollow">CV (PDF)</a>
+    </nav>
+
+    <section id="press" class="nb-section">
+        <h2 class="nb-label">In the press</h2>
+        <ul class="nb-press">
+            {{- range sort hugo.Data.press "date" "desc" }}
+            <li>
+                <a href="{{ .url }}">
+                    <span class="nb-outlet">{{ .outlet }}</span>
+                    <span class="nb-headline"{{ with .lang }} lang="{{ . }}"{{ end }}>{{ with .prefix }}{{ . }}: {{ end }}{{ .title }}</span>
+                    <time class="nb-date" datetime="{{ time.Format "2006-01-02" .date }}">{{ time.Format "Jan 2006" .date }}</time>
+                </a>
+            </li>
+            {{- end }}
+        </ul>
+    </section>
+
+    <section id="recent" class="nb-section">
+        <h2 class="nb-label">Recent</h2>
+        <ul class="nb-recent">
+            {{- range sort hugo.Data.news "date" "desc" }}
+            <li>
+                <time datetime="{{ time.Format "2006-01-02" .date }}">{{ time.Format "2006-01" .date }}</time>
+                <span class="nb-text">{{ .text | markdownify }}</span>
+            </li>
+            {{- end }}
+        </ul>
+    </section>
+
+    <section id="publications" class="nb-section">
+        <h2 class="nb-label">Selected publications</h2>
+        <ul class="nb-pubs">
+            {{- range where $pubs "selected" true }}
+            <li>
+                <a class="nb-pub-title" href="{{ .url }}">{{ .title | safeHTML }}</a>
+                <div class="nb-pub-meta">
+                    {{- partial "pub-authors.html" (.short_authors | default .authors) }} · <em>{{ .venue }}</em> {{ .year }}
+                    {{- if eq .group "preprint" }} · preprint{{ end -}}
+                </div>
+            </li>
+            {{- end }}
+        </ul>
+        <p class="nb-more"><a href="{{ "publications/" | absURL }}">All {{ sub (len $pubs) (len $preprints) }} papers and {{ len $preprints }} preprints →</a></p>
+    </section>
+
+    <section id="software" class="nb-section">
+        <h2 class="nb-label">Software</h2>
+        <ul class="nb-software">
+            {{- range hugo.Data.software }}
+            <li><a href="{{ .url }}"><strong>{{ .name }}</strong></a> — {{ .text }}</li>
+            {{- end }}
+        </ul>
+    </section>
+</article>
+{{- end }}

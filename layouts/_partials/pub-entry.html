@@ -1,0 +1,12 @@
+{{- /* One numbered entry of the full publication list. Context: dict "num" "pub". */ -}}
+{{- with .pub -}}
+<li class="pub">
+    <span class="pub-num">{{ $.num }}.</span>
+    <span class="pub-text">
+        {{- partial "pub-authors.html" .authors }}. <a href="{{ .url }}">{{ .title | safeHTML }}</a>
+        {{- if not (findRE `[.?!]$` .title) }}.{{ end }} <em>{{ .venue }}</em> <strong>{{ .year }}</strong>
+        {{- with .details }}, {{ . }}{{ end }}.
+        {{- with .note }}<span class="pub-note">{{ . | markdownify }}</span>{{ end -}}
+    </span>
+</li>
+{{- end -}}

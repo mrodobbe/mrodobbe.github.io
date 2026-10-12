@@ -1,0 +1,153 @@
+# All publications, in the order of the publication list PDF.
+# group: first | coauthor | preprint. selected: also shown on the home page.
+# The name "Maarten R. Dobbelaere" is set in bold automatically.
+
+- group: first
+  selected: true
+  authors: "Maarten R. Dobbelaere, Helen F. Sneddon"
+  title: "The Stubborn Persistence of Toxic Solvents in Chemical Synthesis"
+  venue: "Angewandte Chemie International Edition"
+  year: 2026
+  details: "e1677569"
+  url: "https://doi.org/10.1002/anie.1677569"
+  note: "Covered by [Nature News](https://www.nature.com/articles/d41586-026-03023-0), [C&EN](https://cen.acs.org/synthesis/green-chemistry/hazardous-solvent-use-patent-data/104/web/2026/09) and [Spektrum der Wissenschaft](https://www.spektrum.de/news/keine-gruene-chemie-warum-chemie-oft-immer-noch-giftig-ist/2347623) · [Data](https://zenodo.org/records/22300099)"
+
+- group: first
+  selected: true
+  authors: "Maarten R. Dobbelaere, István Lengyel, Christian V. Stevens, Kevin M. Van Geem"
+  title: "Geometric deep learning for molecular property predictions with chemical accuracy across chemical space"
+  venue: "Journal of Cheminformatics"
+  year: 2024
+  details: "16, 99"
+  url: "https://doi.org/10.1186/s13321-024-00895-0"
+
+- group: first
+  selected: true
+  authors: "Maarten R. Dobbelaere, István Lengyel, Christian V. Stevens, Kevin M. Van Geem"
+  title: "Rxn-INSIGHT: fast chemical reaction analysis using bond-electron matrices"
+  venue: "Journal of Cheminformatics"
+  year: 2024
+  details: "16, 37"
+  url: "https://doi.org/10.1186/s13321-024-00834-z"
+
+- group: first
+  authors: "Maarten R. Dobbelaere, Yannick Ureel, Florence H. Vermeire, Lowie Tomme, Christian V. Stevens, Kevin M. Van Geem"
+  title: "Machine Learning for Physicochemical Property Prediction of Complex Hydrocarbon Mixtures"
+  venue: "Industrial & Engineering Chemistry Research"
+  year: 2022
+  details: "61(24), 8581–8594"
+  url: "https://doi.org/10.1021/acs.iecr.2c00442"
+
+- group: first
+  authors: "Maarten R. Dobbelaere, Pieter P. Plehiers, Ruben Van de Vijver, Christian V. Stevens, Kevin M. Van Geem"
+  title: "Machine Learning in Chemical Engineering: Strengths, Weaknesses, Opportunities, and Threats"
+  venue: "Engineering"
+  year: 2021
+  details: "7(9), 1201–1211"
+  url: "https://doi.org/10.1016/j.eng.2021.03.019"
+
+- group: first
+  authors: "Maarten R. Dobbelaere, Pieter P. Plehiers, Ruben Van de Vijver, Christian V. Stevens, Kevin M. Van Geem"
+  title: "Learning Molecular Representations for Thermochemistry Prediction of Cyclic Hydrocarbons and Oxygenates"
+  venue: "Journal of Physical Chemistry A"
+  year: 2021
+  details: "125(23), 5166–5179"
+  url: "https://doi.org/10.1021/acs.jpca.1c01956"
+
+- group: coauthor
+  authors: "Lowie Tomme, Jeroen Aerssens, István Lengyel, Maarten K. Sabbe, Maarten R. Dobbelaere, Christian V. Stevens, Kevin M. Van Geem"
+  title: "Semi-Empirical Evaluation of Hindered Internal Rotors for Accelerated Thermodynamics Predictions"
+  venue: "Journal of Physical Chemistry A"
+  year: 2026
+  details: "130(10), 2158–2168"
+  url: "https://doi.org/10.1021/acs.jpca.5c08672"
+
+- group: coauthor
+  authors: "Yannick Ureel, Maarten R. Dobbelaere, István Lengyel, Maarten K. Sabbe, Kevin M. Van Geem"
+  title: "How can active machine learning aid kinetic model generation, and why should we care?"
+  venue: "Engineering"
+  year: 2025
+  details: "52, 14–18"
+  url: "https://doi.org/10.1016/j.eng.2025.08.009"
+
+- group: coauthor
+  authors: "Caroline T. A. Moermond, Neele Puhlmann, Lowik Pieters, Avtar Matharu, Lieselot Boone, Maarten R. Dobbelaere, Héloïse Proquin, Klaus Kümmerer, Ad M. J. Ragas, Rodrigo Vidaurre, Bastiaan J. Venhuis, Delphine De Smedt"
+  title: "Eco-pharma dilemma: navigating environmental sustainability trade-offs within the lifecycle of pharmaceuticals – a comment"
+  venue: "Sustainable Chemistry and Pharmacy"
+  year: 2025
+  details: "43, 101893"
+  url: "https://doi.org/10.1016/j.scp.2024.101893"
+
+- group: coauthor
+  authors: "Lowie Tomme, Yannick Ureel, Maarten R. Dobbelaere, István Lengyel, Florence H. Vermeire, Christian V. Stevens, Kevin M. Van Geem"
+  title: "Machine learning applications for thermochemical and kinetic property prediction"
+  venue: "Reviews in Chemical Engineering"
+  year: 2025
+  details: "41(4), 419–449"
+  url: "https://doi.org/10.1515/revce-2024-0027"
+
+- group: coauthor
+  authors: "Yasemen Kuddusi, Maarten R. Dobbelaere, Kevin M. Van Geem, Andreas Züttel"
+  title: "Accelerated design of nickel-cobalt based catalysts for CO<sub>2</sub> hydrogenation with human-in-the-loop active machine learning"
+  venue: "Catalysis Science & Technology"
+  year: 2024
+  details: "14(21), 6307–6320"
+  url: "https://doi.org/10.1039/d4cy00873a"
+
+- group: coauthor
+  authors: "Yannick Ureel, Maarten R. Dobbelaere, Yi Ouyang, Kevin De Ras, Maarten K. Sabbe, Guy B. Marin, Kevin M. Van Geem"
+  title: "Active machine learning for chemical engineers: a bright future lies ahead!"
+  venue: "Engineering"
+  year: 2023
+  details: "27, 23–30"
+  url: "https://doi.org/10.1016/j.eng.2023.02.019"
+
+- group: coauthor
+  authors: "Onur Dogu, Andreas Eschenbacher, Robin John Varghese, Maarten R. Dobbelaere, Dagmar R. D’hooge, Paul H. M. Van Steenberge, Kevin M. Van Geem"
+  title: "Bayesian tuned kinetic Monte Carlo modeling of polystyrene pyrolysis: Unraveling the pathways to its monomer, dimers, and trimers formation"
+  venue: "Chemical Engineering Journal"
+  year: 2023
+  details: "455, 140708"
+  url: "https://doi.org/10.1016/j.cej.2022.140708"
+
+- group: coauthor
+  authors: "Yannick Ureel, Maarten R. Dobbelaere, Oğuzhan Akin, Robin John Varghese, César Pernalete Piña, Joris W. Thybaut, Kevin M. Van Geem"
+  title: "Active learning-based exploration of the catalytic pyrolysis of plastic waste"
+  venue: "Fuel"
+  year: 2022
+  details: "328, 125340"
+  url: "https://doi.org/10.1016/j.fuel.2022.125340"
+
+- group: coauthor
+  authors: "Yi Ouyang, Laurien A. Vandewalle, Lin Chen, Pieter P. Plehiers, Maarten R. Dobbelaere, Geraldine J. Heynderickx, Guy B. Marin, Kevin M. Van Geem"
+  title: "Speeding up turbulent reactive flow simulation via a deep artificial neural network: A methodology study"
+  venue: "Chemical Engineering Journal"
+  year: 2022
+  details: "429, 132442"
+  url: "https://doi.org/10.1016/j.cej.2021.132442"
+
+- group: coauthor
+  authors: "Pieter P. Plehiers, Connor W. Coley, Hanyu Gao, Florence H. Vermeire, Maarten R. Dobbelaere, Christian V. Stevens, Kevin M. Van Geem, William H. Green"
+  title: "Artificial Intelligence for Computer-Aided Synthesis In Flow: Analysis and Selection of Reaction Components"
+  venue: "Frontiers in Chemical Engineering"
+  year: 2020
+  details: "2, 5"
+  url: "https://doi.org/10.3389/fceng.2020.00005"
+
+- group: preprint
+  authors: "Daniel P. Armstrong, Maarten R. Dobbelaere, Valentas Olikauskas, Helena Avila, Octavian Susanu, Jérôme Waser, Philippe Schwaller"
+  title: "Agentic generation of verifiable rules for deterministic, self-expanding reaction classification"
+  venue: "arXiv"
+  year: 2026
+  details: "2607.01061"
+  url: "https://arxiv.org/abs/2607.01061"
+
+- group: preprint
+  selected: true
+  authors: "Daniel Armstrong, Xuan-Vu Nguyen, Octavian Susanu, Gabriel Gibberd, Théo A. Neukomm, Taddäus Strunden, Dan Forster, Morgane Delattre, Shawn Teh, Clément Rols, John Federice, Hayden Leatherwood, M. Lavelle Barnes, Maarten R. Dobbelaere, Peter Wipf, Jon T. Njardarson, Jieping Zhu, Philippe Schwaller"
+  short_authors: "D. Armstrong, …, Maarten R. Dobbelaere, …, P. Schwaller"
+  title: "Strategy-first synthesis planning for complex natural products"
+  venue: "arXiv"
+  year: 2026
+  details: "2608.07454"
+  url: "https://arxiv.org/abs/2608.07454"

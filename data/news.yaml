@@ -1,0 +1,17 @@
+# Shown under "Recent" on the home page, newest first (sorted by date).
+# Text is Markdown.
+
+- date: 2026-10-21
+  text: "I am a finalist of the Vlaamse PhD Cup. The final takes place on 21 October."
+
+- date: 2026-10-06
+  text: "Lowie Tomme defended the PhD thesis *Accelerated Generation of Detailed Chemical Reaction Networks*, which I co-supervised."
+
+- date: 2026-09-16
+  text: "[The Stubborn Persistence of Toxic Solvents in Chemical Synthesis](https://doi.org/10.1002/anie.1677569), with Helen Sneddon, is out in *Angewandte Chemie*."
+
+- date: 2026-08-01
+  text: "Started as a scientist at LIAC, EPFL, working on AI for chemical synthesis planning."
+
+- date: 2026-05-01
+  text: "Keynote at the 10th Green & Sustainable Chemistry Conference in Dresden: *What AI learns from a million reactions about solvent sustainability*."

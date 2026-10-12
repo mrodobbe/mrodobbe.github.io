@@ -1,0 +1,7 @@
+- name: "Rxn-INSIGHT"
+  url: "https://github.com/mrodobbe/Rxn-INSIGHT"
+  text: "open-source chemical reaction analysis using bond-electron matrices."
+
+- name: "Solvent Explorer"
+  url: "https://www.solventexplorer.com"
+  text: "an open tool to analyse real-world solvent use across reaction classes."
