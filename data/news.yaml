@@ -2,7 +2,11 @@
 # Text is Markdown.
 
 - date: 2026-10-21
-  text: "I am a finalist of the Vlaamse PhD Cup. The final takes place on 21 October."
+  text: >-
+    Through to the final of the [Vlaamse PhD Cup](https://www.phdcup.be/nieuws/finaletickets-op-zak-deze-acht-onderzoekers-maken-kans-op-phd-cup-2026)!
+    One of eight finalists from a record 81 entries, I'll pitch *Nieuwe geneesmiddelen ontdekken met een AI-receptenboek*
+    ("discovering new medicines with an AI recipe book") on 21 October at the Handelsbeurs in Ghent.
+    Come watch, follow the livestream, or vote for the audience award until 17:00 that day.
 
 - date: 2026-10-06
   text: "Lowie Tomme defended the PhD thesis *Accelerated Generation of Detailed Chemical Reaction Networks*, which I co-supervised."
