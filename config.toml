@@ -19,7 +19,7 @@ publishDir = "docs"
     favicon = "atom.ico"
     description = """
         Scientist at the Laboratory for Artificial Chemical Intelligence (LIAC), EPFL, working on AI for
-        chemical synthesis planning and chemicals that are safe and sustainable by design.
+        chemical synthesis planning.
     """
     publicationYear = "2022"
     # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
